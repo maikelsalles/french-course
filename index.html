@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Francês</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #111111;
+        }
+        section {
+            padding: 20px;
+        }
+        h2 {
+            display: inline-block;
+            margin: 0;
+        }
+        h2 + span {
+            display: inline-block;
+            margin-left: 10px;
+            font-size: 0.8rem;
+        }
+        .help-tip {
+            opacity: 0;
+            position: absolute;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: #999;
+            width: 30px;
+            height: 30px;
+            font-size: .8rem;
+            font-weight: bold;
+            background: #eee;
+            border-radius: 50%;
+        }
+        .help-tip:hover {
+            opacity: 1;
+        }
+        input {
+            display: inline-block;
+            border: none;
+            border-bottom: 1px solid #999;
+            background: transparent;
+            padding: 8px;
+            width: 100%;
+        }
+        input:focus {
+            outline: none;
+            border-bottom: 1px solid #333;
+        }
+        input:hover + .help-tip {
+            opacity: .7;
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            padding: 3px 0;
+            list-style: none;
+            display: flex;
+            gap: 10px;
+            position: relative;
+            max-width: 150px;
+        }
+        .card-verb {
+            border: 1px solid #d6d6d6;
+            padding: 16px;
+            margin-bottom: 10px;
+            display: inline-block;
+            border-radius: 8px;
+        }
+        .card-verb div {
+            position: relative;
+            display: flex;
+        }
+        .card-verb div:hover .help-tip{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Curso de Francês
+    </header>
+    <main>
+        <h1>Verbes</h1>
+        <section>
+            <div class="card-verb">
+                <div>
+                    <h2>Être</h2>
+                    <span class="help-tip" title="Ser / Estar">?</span>
+                </div>
+                <ul>
+                    <li>
+                        <input placeholder="je" type="text">
+                        <span class="help-tip" title="Je suis">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="tu" type="text">
+                        <span class="help-tip" title="Tu es">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="il / elle / on" type="text">
+                        <span class="help-tip" title="Il est">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="nous" type="text">
+                        <span class="help-tip" title="Nous sommes">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="vous" type="text">
+                        <span class="help-tip" title="Vous êtes">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="ils / elles" type="text">
+                        <span class="help-tip" title="Ils sont">?</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-verb">
+                <div>
+                    <h2>Avoir</h2>
+                    <span class="help-tip" title="Ter">?</span>
+                </div>
+                <ul>
+                    <li>
+                        <input placeholder="j'" type="text">
+                        <span class="help-tip" title="J'ai">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="tu" type="text">
+                        <span class="help-tip" title="Tu as">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="il / elle / on" type="text">
+                        <span class="help-tip" title="Il a">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="nous" type="text">
+                        <span class="help-tip" title="Nous avons">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="vous" type="text">
+                        <span class="help-tip" title="Vous avez">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="ils / elles" type="text">
+                        <span class="help-tip" title="Ils ont">?</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-verb">
+                <div>
+                    <h2>Aller</h2>
+                    <span class="help-tip" title="Ir">?</span>
+                </div>
+                <ul>
+                    <li>
+                        <input placeholder="je" type="text">
+                        <span class="help-tip" title="Je vais">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="tu" type="text">
+                        <span class="help-tip" title="Tu vas">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="il / elle / on" type="text">
+                        <span class="help-tip" title="Il va">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="nous" type="text">
+                        <span class="help-tip" title="Nous allons">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="vous" type="text">
+                        <span class="help-tip" title="Vous allez">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="ils / elles" type="text">
+                        <span class="help-tip" title="Ils vont">?</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-verb">
+                <div>
+                    <h2>Faire</h2>
+                    <span class="help-tip" title="Fazer">?</span>
+                </div>
+                <ul>
+                    <li>
+                        <input placeholder="je" type="text">
+                        <span class="help-tip" title="Je fais">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="tu" type="text">
+                        <span class="help-tip" title="Tu fais">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="il / elle / on" type="text">
+                        <span class="help-tip" title="Il fait">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="nous" type="text">
+                        <span class="help-tip" title="Nous faisons">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="vous" type="text">
+                        <span class="help-tip" title="Vous faites">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="ils / elles" type="text">
+                        <span class="help-tip" title="Ils font">?</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-verb">
+                <div>
+                    <h2>Venir</h2>
+                    <span class="help-tip" title="Vir">?</span>
+                </div>
+                <ul>
+                    <li>
+                        <input placeholder="je" type="text">
+                        <span class="help-tip" title="Je viens">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="tu" type="text">
+                        <span class="help-tip" title="Tu viens">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="il / elle / on" type="text">
+                        <span class="help-tip" title="Il vient">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="nous" type="text">
+                        <span class="help-tip" title="Nous venons">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="vous" type="text">
+                        <span class="help-tip" title="Vous venez">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="ils / elles" type="text">
+                        <span class="help-tip" title="Ils viennent">?</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-verb">
+                <div>
+                    <h2>Prendre</h2>
+                    <span class="help-tip" title="Pegar / Tomar">?</span>
+                </div>
+                <ul>
+                    <li>
+                        <input placeholder="je" type="text">
+                        <span class="help-tip" title="Je prends">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="tu" type="text">
+                        <span class="help-tip" title="Tu prends">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="il / elle / on" type="text">
+                        <span class="help-tip" title="Il prend">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="nous" type="text">
+                        <span class="help-tip" title="Nous prenons">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="vous" type="text">
+                        <span class="help-tip" title="Vous prenez">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="ils / elles" type="text">
+                        <span class="help-tip" title="Ils prennent">?</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-verb">
+                <div>
+                    <h2>Voir</h2>
+                    <span class="help-tip" title="Ver">?</span>
+                </div>
+                <ul>
+                    <li>
+                        <input placeholder="je" type="text">
+                        <span class="help-tip" title="Je vois">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="tu" type="text">
+                        <span class="help-tip" title="Tu vois">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="il / elle / on" type="text">
+                        <span class="help-tip" title="Il voit">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="nous" type="text">
+                        <span class="help-tip" title="Nous voyons">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="vous" type="text">
+                        <span class="help-tip" title="Vous voyez">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="ils / elles" type="text">
+                        <span class="help-tip" title="Ils voient">?</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-verb">
+                <div>
+                    <h2>Dire</h2>
+                    <span class="help-tip" title="Dizer">?</span>
+                </div>
+                <ul>
+                    <li>
+                        <input placeholder="je" type="text">
+                        <span class="help-tip" title="Je dis">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="tu" type="text">
+                        <span class="help-tip" title="Tu dis">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="il / elle / on" type="text">
+                        <span class="help-tip" title="Il dit">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="nous" type="text">
+                        <span class="help-tip" title="Nous disons">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="vous" type="text">
+                        <span class="help-tip" title="Vous dites">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="ils / elles" type="text">
+                        <span class="help-tip" title="Ils disent">?</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-verb">
+                <div>
+                    <h2>Savoir</h2>
+                    <span class="help-tip" title="Saber">?</span>
+                </div>
+                <ul>
+                    <li>
+                        <input placeholder="je" type="text">
+                        <span class="help-tip" title="Je sais">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="tu" type="text">
+                        <span class="help-tip" title="Tu sais">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="il / elle / on" type="text">
+                        <span class="help-tip" title="Il sait">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="nous" type="text">
+                        <span class="help-tip" title="Nous savons">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="vous" type="text">
+                        <span class="help-tip" title="Vous savez">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="ils / elles" type="text">
+                        <span class="help-tip" title="Ils savent">?</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-verb">
+                <div>
+                    <h2>Vouloir</h2>
+                    <span class="help-tip" title="Querer">?</span>
+                </div>
+                <ul>
+                    <li>
+                        <input placeholder="je" type="text">
+                        <span class="help-tip" title="Je veux">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="tu" type="text">
+                        <span class="help-tip" title="Tu veux">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="il / elle / on" type="text">
+                        <span class="help-tip" title="Il veut">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="nous" type="text">
+                        <span class="help-tip" title="Nous voulons">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="vous" type="text">
+                        <span class="help-tip" title="Vous voulez">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="ils / elles" type="text">
+                        <span class="help-tip" title="Ils veulent">?</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-verb">
+                <div>
+                    <h2>Devoir</h2>
+                    <span class="help-tip" title="Dever">?</span>
+                </div>
+                <ul>
+                    <li>
+                        <input placeholder="je" type="text">
+                        <span class="help-tip" title="Je dois">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="tu" type="text">
+                        <span class="help-tip" title="Tu dois">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="il / elle / on" type="text">
+                        <span class="help-tip" title="Il doit">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="nous" type="text">
+                        <span class="help-tip" title="Nous devons">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="vous" type="text">
+                        <span class="help-tip" title="Vous devez">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="ils / elles" type="text">
+                        <span class="help-tip" title="Ils doivent">?</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-verb">
+                <div>
+                    <h2>Mettre</h2>
+                    <span class="help-tip" title="Colocar / Pôr">?</span>
+                </div>
+                <ul>
+                    <li>
+                        <input placeholder="je" type="text">
+                        <span class="help-tip" title="Je mets">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="tu" type="text">
+                        <span class="help-tip" title="Tu mets">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="il / elle / on" type="text">
+                        <span class="help-tip" title="Il met">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="nous" type="text">
+                        <span class="help-tip" title="Nous mettons">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="vous" type="text">
+                        <span class="help-tip" title="Vous mettez">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="ils / elles" type="text">
+                        <span class="help-tip" title="Ils mettent">?</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-verb">
+                <div>
+                    <h2>Parler</h2>
+                    <span class="help-tip" title="Falar">?</span>
+                </div>
+                <ul>
+                    <li>
+                        <input placeholder="je" type="text">
+                        <span class="help-tip" title="Je parle">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="tu" type="text">
+                        <span class="help-tip" title="Tu parles">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="il / elle / on" type="text">
+                        <span class="help-tip" title="Il parle">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="nous" type="text">
+                        <span class="help-tip" title="Nous parlons">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="vous" type="text">
+                        <span class="help-tip" title="Vous parlez">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="ils / elles" type="text">
+                        <span class="help-tip" title="Ils parlent">?</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-verb">
+                <div>
+                    <h2>Finir</h2>
+                    <span class="help-tip" title="Terminar">?</span>
+                </div>
+                <ul>
+                    <li>
+                        <input placeholder="je" type="text">
+                        <span class="help-tip" title="Je finis">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="tu" type="text">
+                        <span class="help-tip" title="Tu finis">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="il / elle / on" type="text">
+                        <span class="help-tip" title="Il finit">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="nous" type="text">
+                        <span class="help-tip" title="Nous finissons">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="vous" type="text">
+                        <span class="help-tip" title="Vous finissez">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="ils / elles" type="text">
+                        <span class="help-tip" title="Ils finissent">?</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-verb">
+                <div>
+                    <h2>Lire</h2>
+                    <span class="help-tip" title="Ler">?</span>
+                </div>
+                <ul>
+                    <li>
+                        <input placeholder="je" type="text">
+                        <span class="help-tip" title="Je lis">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="tu" type="text">
+                        <span class="help-tip" title="Tu lis">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="il / elle / on" type="text">
+                        <span class="help-tip" title="Il lit">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="nous" type="text">
+                        <span class="help-tip" title="Nous lisons">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="vous" type="text">
+                        <span class="help-tip" title="Vous lisez">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="ils / elles" type="text">
+                        <span class="help-tip" title="Ils lisent">?</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-verb">
+                <div>
+                    <h2>Écrire</h2>
+                    <span class="help-tip" title="Escrever">?</span>
+                </div>
+                <ul>
+                    <li>
+                        <input placeholder="je" type="text">
+                        <span class="help-tip" title="J'écris">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="tu" type="text">
+                        <span class="help-tip" title="Tu écris">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="il / elle / on" type="text">
+                        <span class="help-tip" title="Il écrit">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="nous" type="text">
+                        <span class="help-tip" title="Nous écrivons">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="vous" type="text">
+                        <span class="help-tip" title="Vous écrivez">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="ils / elles" type="text">
+                        <span class="help-tip" title="Ils écrivent">?</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-verb">
+                <div>
+                    <h2>Boire</h2>
+                    <span class="help-tip" title="Beber">?</span>
+                </div>
+                <ul>
+                    <li>
+                        <input placeholder="je" type="text">
+                        <span class="help-tip" title="Je bois">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="tu" type="text">
+                        <span class="help-tip" title="Tu bois">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="il / elle / on" type="text">
+                        <span class="help-tip" title="Il boit">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="nous" type="text">
+                        <span class="help-tip" title="Nous buvons">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="vous" type="text">
+                        <span class="help-tip" title="Vous buvez">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="ils / elles" type="text">
+                        <span class="help-tip" title="Ils boivent">?</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-verb">
+                <div>
+                    <h2>Vivre</h2>
+                    <span class="help-tip" title="Viver">?</span>
+                </div>
+                <ul>
+                    <li>
+                        <input placeholder="je" type="text">
+                        <span class="help-tip" title="Je vis">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="tu" type="text">
+                        <span class="help-tip" title="Tu vis">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="il / elle / on" type="text">
+                        <span class="help-tip" title="Il vit">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="nous" type="text">
+                        <span class="help-tip" title="Nous vivons">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="vous" type="text">
+                        <span class="help-tip" title="Vous vivez">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="ils / elles" type="text">
+                        <span class="help-tip" title="Ils vivent">?</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-verb">
+                <div>
+                    <h2>Connaître</h2>
+                    <span class="help-tip" title="Conhecer">?</span>
+                </div>
+                <ul>
+                    <li>
+                        <input placeholder="je" type="text">
+                        <span class="help-tip" title="Je connais">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="tu" type="text">
+                        <span class="help-tip" title="Tu connais">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="il / elle / on" type="text">
+                        <span class="help-tip" title="Il connaît">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="nous" type="text">
+                        <span class="help-tip" title="Nous connaissons">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="vous" type="text">
+                        <span class="help-tip" title="Vous connaissez">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="ils / elles" type="text">
+                        <span class="help-tip" title="Ils connaissent">?</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-verb">
+                <div>
+                    <h2>Vendre</h2>
+                    <span class="help-tip" title="Vender">?</span>
+                </div>
+                <ul>
+                    <li>
+                        <input placeholder="je" type="text">
+                        <span class="help-tip" title="Je vends">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="tu" type="text">
+                        <span class="help-tip" title="Tu vends">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="il / elle / on" type="text">
+                        <span class="help-tip" title="Il vend">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="nous" type="text">
+                        <span class="help-tip" title="Nous vendons">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="vous" type="text">
+                        <span class="help-tip" title="Vous vendez">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="ils / elles" type="text">
+                        <span class="help-tip" title="Ils vendent">?</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-verb">
+                <div>
+                    <h2>Attendre</h2>
+                    <span class="help-tip" title="Aguardar">?</span>
+                </div>
+                <ul>
+                    <li>
+                        <input placeholder="je" type="text">
+                        <span class="help-tip" title="J'attends">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="tu" type="text">
+                        <span class="help-tip" title="Tu attends">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="il / elle / on" type="text">
+                        <span class="help-tip" title="Il attend">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="nous" type="text">
+                        <span class="help-tip" title="Nous attendons">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="vous" type="text">
+                        <span class="help-tip" title="Vous attendez">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="ils / elles" type="text">
+                        <span class="help-tip" title="Ils attendent">?</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-verb">
+                <div>
+                    <h2>Ouvrir</h2>
+                    <span class="help-tip" title="Abrir">?</span>
+                </div>
+                <ul>
+                    <li>
+                        <input placeholder="je" type="text">
+                        <span class="help-tip" title="J'ouvre">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="tu" type="text">
+                        <span class="help-tip" title="Tu ouvres">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="il / elle / on" type="text">
+                        <span class="help-tip" title="Il ouvre">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="nous" type="text">
+                        <span class="help-tip" title="Nous ouvrons">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="vous" type="text">
+                        <span class="help-tip" title="Vous ouvrez">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="ils / elles" type="text">
+                        <span class="help-tip" title="Ils ouvrent">?</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-verb">
+                <div>
+                    <h2>Fermer</h2>
+                    <span class="help-tip" title="Fechar">?</span>
+                </div>
+                <ul>
+                    <li>
+                        <input placeholder="je" type="text">
+                        <span class="help-tip" title="Je ferme">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="tu" type="text">
+                        <span class="help-tip" title="Tu fermes">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="il / elle / on" type="text">
+                        <span class="help-tip" title="Il ferme">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="nous" type="text">
+                        <span class="help-tip" title="Nous fermons">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="vous" type="text">
+                        <span class="help-tip" title="Vous fermez">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="ils / elles" type="text">
+                        <span class="help-tip" title="Ils ferment">?</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-verb">
+                <div>
+                    <h2>Apprendre</h2>
+                    <span class="help-tip" title="Aprender">?</span>
+                </div>
+                <ul>
+                    <li>
+                        <input placeholder="je" type="text">
+                        <span class="help-tip" title="J'apprends">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="tu" type="text">
+                        <span class="help-tip" title="Tu apprends">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="il / elle / on" type="text">
+                        <span class="help-tip" title="Il apprend">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="nous" type="text">
+                        <span class="help-tip" title="Nous apprenons">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="vous" type="text">
+                        <span class="help-tip" title="Vous apprenez">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="ils / elles" type="text">
+                        <span class="help-tip" title="Ils apprennent">?</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-verb">
+                <div>
+                    <h2>Comprendre</h2>
+                    <span class="help-tip" title="Compreender">?</span>
+                </div>
+                <ul>
+                    <li>
+                        <input placeholder="je" type="text">
+                        <span class="help-tip" title="Je comprends">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="tu" type="text">
+                        <span class="help-tip" title="Tu comprends">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="il / elle / on" type="text">
+                        <span class="help-tip" title="Il comprend">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="nous" type="text">
+                        <span class="help-tip" title="Nous comprenons">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="vous" type="text">
+                        <span class="help-tip" title="Vous comprenez">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="ils / elles" type="text">
+                        <span class="help-tip" title="Ils comprennent">?</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-verb">
+                <div>
+                    <h2>Rire</h2>
+                    <span class="help-tip" title="Rir">?</span>
+                </div>
+                <ul>
+                    <li>
+                        <input placeholder="je" type="text">
+                        <span class="help-tip" title="Je ris">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="tu" type="text">
+                        <span class="help-tip" title="Tu ris">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="il / elle / on" type="text">
+                        <span class="help-tip" title="Il rit">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="nous" type="text">
+                        <span class="help-tip" title="Nous rions">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="vous" type="text">
+                        <span class="help-tip" title="Vous riez">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="ils / elles" type="text">
+                        <span class="help-tip" title="Ils rient">?</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-verb">
+                <div>
+                    <h2>Vendre</h2>
+                    <span class="help-tip" title="Vender">?</span>
+                </div>
+                <ul>
+                    <li>
+                        <input placeholder="je" type="text">
+                        <span class="help-tip" title="Je vends">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="tu" type="text">
+                        <span class="help-tip" title="Tu vends">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="il / elle / on" type="text">
+                        <span class="help-tip" title="Il vend">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="nous" type="text">
+                        <span class="help-tip" title="Nous vendons">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="vous" type="text">
+                        <span class="help-tip" title="Vous vendez">?</span>
+                    </li>
+                    <li>
+                        <input placeholder="ils / elles" type="text">
+                        <span class="help-tip" title="Ils vendent">?</span>
+                    </li>
+                </ul>
+            </div>
+            
+        </section>
+    </main>
+</body>
+</html>
